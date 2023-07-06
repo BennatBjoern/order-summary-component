@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
+}
+
+.container {
+  width: 40rem;
+}
+
+.picture {
+  background-image: url("../images/illustration-hero.svg");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.content {
+  padding: 4rem;
+  text-align: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 0 0 20px 20px;
+}
+
+.content-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+  margin-bottom: 1.6rem;
+}
+
+.content-text {
+  font-size: 1.5rem;
+  color: var(--desaturated-blue);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.plan-container {
+  /* background-color: var(--very-pale-blue); */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.plan-container img {
+  height: 4.2rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-right: auto;
+}
+
+.plan-header {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.plan-price {
+  font-size: 1.4rem;
+  color: var(--desaturated-blue);
+}
+
+.change:link,
+.change:visited {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  transition: all 0.3s;
+}
+
+.change:hover,
+.change:active {
+  text-decoration: none;
+  color: var(--bright-blue);
+}
+
+.btn {
+  width: 100%;
+  padding: 1.4rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn--proceed {
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+  color: var(--very-pale-blue);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.6rem;
+  transition: all 0.3s;
+}
+
+.btn--proceed:hover {
+  background-color: var(--bright-blue);
+}
+
+.btn--cancel {
+  color: var(--desaturated-blue);
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.btn--cancel:hover {
+  color: var(--dark-blue);
+}
