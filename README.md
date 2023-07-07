@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution link]()
-- Live Site URL: [Live link]()
+- Solution URL: [Solution link](https://www.frontendmentor.io/solutions/order-summary-component-using-flexbox-W2L9JHTuMs)
+- Live Site URL: [Live link](https://bennatbjoern.github.io/order-summary-component/)
 
 ## My process
 
